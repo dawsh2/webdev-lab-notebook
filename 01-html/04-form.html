@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 04 - Form</title>
+  </head>
+  <body>
+    <main>
+      <h1> Form</h1>
+      <form action="/submit">
+        <!-- Add your code here -->
+
+        <!-- For Input Submittion -->
+        <label for="fname"> Name: </label>
+        <input type="text" id="fname" name="fname" placeholder="Full Name">
+        <br>
+        <label for="email"> Email: </label>
+        <input type="text" id="email" name="email" placeholder="name@pdx.edu">
+
+        <br>
+        <br>
+
+        <!-- For Radio Submittion -->
+        <fieldset>
+          <legend tabindex="0"> Favorite Character </legend>
+          
+          <input tabindex="0" type="radio" id="Spongebob" name="option">
+          <label for ="Spongebob">Spongebob</label>
+          <br>
+          <input tabindex="0" type="radio" id="Sandy" name="option">
+          <label for ="Sandy">Sandy</label>
+          <br>
+          <input tabindex="0" type="radio" id="Patrick" name="option">
+          <label for ="Patrick">Patrick</label>
+
+        </fieldset>
+
+        <br>
+        
+        <!-- For Checkbox Submission -->
+        <fieldset>
+          <legend> Are you a fan of the show </legend>
+
+          <input type="checkbox" id = "check1" name="check1">
+          <label for="check1">Yes, I have watched all episodes!</label>  
+          <br>
+          <input type="checkbox" id = "check2" name="check2">
+          <label for="check2">Yes, it's got the best memes</label>
+          </fieldset>
+
+          <br>
+
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+
+        <!-- End of my code -->
+
+
+      </form>
+    </main>
+  </body>
+</html>

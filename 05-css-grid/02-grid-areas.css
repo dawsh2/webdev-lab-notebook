@@ -1,0 +1,69 @@
+.header {
+  grid-area: header;
+}
+
+.article {
+  grid-area: article;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  height: 97vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "header   header    header    header"
+    "aside    article   article   article"
+    "aside    article   article   article"
+    "section  section   section   section"
+    "section  section   section   section"
+    "footer   footer    footer    footer";
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 3fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "header   header"
+      "article  aside"
+      "section  section"
+      "footer   footer";
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 3fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "header"
+      "article"
+      "article"
+      "article"
+      "section"
+      "section"
+      "section"
+      "aside"
+      "footer";
+  }
+}

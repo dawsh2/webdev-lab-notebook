@@ -1,0 +1,88 @@
+.flex-container {
+  display: flex;
+  background-color: rgb(190, 190, 231);
+}
+
+/* for box styling */
+div {
+  background-color: blueviolet;
+  color: white;
+  margin: 5px;
+  padding: 20px 30px;
+  font-size: 40px;
+}
+
+/* Flex Container 1 */
+.flex-container-1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* justify-content: center;
+  flex-wrap: wrap; */
+}
+
+
+/* Flex Container 2 */
+.flex-container-2 {
+  flex-flow: row-reverse wrap;
+}
+
+/* Flex Container 3 */
+.flex-container-3 {
+  height: 400px;
+  flex-flow: column-reverse wrap;
+  align-items: flex-end;
+
+  /* flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: wrap; */
+}
+
+/* use height: 400px; on the container */
+
+/* Flex Container 4 */
+.flex-container-4 {
+  flex-flow: row wrap-reverse;
+  justify-content: space-evenly;
+
+  flex: wrap;
+  
+}
+/* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  align-items: center;
+  
+}
+
+.flex-container-5 .item1,
+.flex-container-5 .item3,
+.flex-container-5 .item6 {
+  height: 300px;
+}
+
+.flex-container-5 .item2,
+.flex-container-5 .item8 {
+  height: 400px;
+}
+
+.flex-container-5 .item4,
+.flex-container-5 .item5,
+.flex-container-5 .item7 {
+  height: 200px;
+}
+
+/* Flex Container 6 */
+.flex-container-6 {
+  height: 300px;
+  flex-flow: column wrap;
+}
+.flex-container-6 .flex-item {
+  width: 400px;
+  
+}
+
+
+
+/* use height: 300px; on the container */

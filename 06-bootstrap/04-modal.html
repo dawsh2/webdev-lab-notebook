@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 04 - Modals</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../_styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1>04 - Bootstrap Modal</h1>
+    <!-- Add your code here -->
+     <main class="container">
+      <div class="text-center mx-auto">
+        <h1 class="my-5">Modal</h1>
+        <div class="mb-4">Click on the button below for more information inside the modal</div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">More Details</button>
+      </div>
+
+      <div class="modal fade mt-5" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4>More Details</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam consequatur accusamus asperiores! Ea, velit voluptates. Vitae odit aut quidem mollitia odio doloremque quaerat necessitatibus tempore, illo quia enim cum?</div>
+            <div class="modal-footer">
+              <h5>This is the footer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+     </main>
+  </body>
+</html>

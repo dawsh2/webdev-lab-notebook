@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 - Form</title>
+    <link rel="stylesheet" href="../_styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>01 - Form</h1>
+      <form action="">
+        <!-- <span>Name</span> -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name"/>
+
+        <br><br>
+
+        <!-- if placed in one line, it will not give it spaciing between the text and input field -->
+        <label>Email
+          <input type="text"/>
+        </label>
+        
+        <br><br>
+        
+        <fieldset>
+          <legend>Favorite Character</legend>
+          
+          <div>
+            <input type="radio" id="spongebob" name="character">
+            <label for="spongebob">Spongebob</label>
+
+            <br>
+
+            <input type="radio" id="patrick" name="character"/>
+            <label for="patrick">Patrick</label>
+
+            <br>
+
+            <input type="radio" id="sandy" name="character"/>
+            <label for="sandy">Sandy</label>
+          </div>
+
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+
+      </form>
+    </main>
+  </body>
+</html>
